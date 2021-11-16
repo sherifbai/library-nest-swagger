@@ -1,15 +1,18 @@
 import { ConnectionOptions } from 'typeorm';
 
-export const ormconfig: ConnectionOptions = {
+const ormconfig: ConnectionOptions = {
   type: 'mysql',
   host: 'localhost',
+  port: 3306,
   username: 'root',
   password: 'root',
-  port: 3306,
   database: 'library',
+  entities: [__dirname + '/**/*.entity{.ts,.js}'],
   synchronize: false,
-  entities: [__dirname + '/migrations/**/*{.ts,.js}'],
+  migrations: [__dirname + '/migrations/**/*{.ts,.js}'],
   cli: {
     migrationsDir: 'src/migrations',
   },
 };
+
+export default ormconfig;
