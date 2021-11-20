@@ -20,6 +20,7 @@ async function bootstrap() {
       'access-token',
     )
     .setVersion('1.0.0')
+    .addServer('https://app.swaggerhub.com/apis/sherifbai/library/1.0.0#/')
     .build();
   const document = SwaggerModule.createDocument(app, options);
   SwaggerModule.setup('api', app, document);
