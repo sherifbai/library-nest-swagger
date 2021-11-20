@@ -59,7 +59,7 @@ $ npm run test:cov
 ```
 
 ## Swagger
-http://localhost:3000/api
+https://app.swaggerhub.com/apis/sherifbai/library-api/1.0.0
 
 ## Support
 
