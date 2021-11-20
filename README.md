@@ -59,7 +59,7 @@ $ npm run test:cov
 ```
 
 ## Swagger
-http://localhost/api
+http://localhost:3000/api
 
 ## Support
 
